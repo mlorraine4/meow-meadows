@@ -14,10 +14,8 @@ const PetSchema = new Schema({
   photo_url: { type: String, required: true },
 });
  
-// Virtual for author's URL
 PetSchema.virtual("url").get(function () {
   return `/inventory/pet/${this._id}`;
 });
 
-// Export model
 module.exports = mongoose.model("Pet", PetSchema);

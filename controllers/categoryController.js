@@ -85,11 +85,7 @@ exports.category_create_post = [
       });
       return;
     } else {
-      // Data from form is valid.
-
-      // Save author.
       await category.save();
-      // Redirect to new author record.
       res.redirect(category.url);
     }
   }),
