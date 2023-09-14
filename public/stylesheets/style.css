@@ -1,0 +1,103 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+li {
+  padding: 10px;
+}
+
+button {
+  background-color: rgb(63, 17, 156);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+button:hover {
+  background-color: cornflowerblue;
+}
+
+.header {
+  width: 100vw;
+  background-color: cornflowerblue;
+  color: white;
+  height: 40px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.container {
+  width: 100vw;
+}
+
+.sidebar-nav {
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+  width: 150px;
+}
+
+.flex {
+  display: flex;
+}
+
+.content {
+  padding: 20px;
+  width: calc(100vw - 150px);
+}
+
+.pet-img-list {
+  width: auto;
+  height: 200px;
+}
+
+.pets-container {
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+
+.pet-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.home-img {
+  width: 80%;
+}
+
+.pet-detail-span {
+  font-weight: bold;
+  color: cornflowerblue;
+}
+
+.pet-detail-info {
+  margin: 50px 0 0 20px;
+}
+
+.pet-list-link {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.form-group {
+  padding: 10px;
+}
+
+label {
+  margin-right: 5px;
+  font-weight: bold;
+  color: cornflowerblue;
+}

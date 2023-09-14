@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    div(class='flex')
+        div(class='pet-detail-head')
+            h2 #{pet.name}
+            img(src=pet.photo_url, class='pet-detail-img')
+
+        div(class='pet-detail-info')
+            p
+                span(class='pet-detail-span') Age: 
+                |  #{pet.age} old
+            p
+                span(class='pet-detail-span') Gender: 
+                |  #{pet.gender}
+            p
+                span(class='pet-detail-span') Breed: 
+                |  #{pet.breed}
+            p
+                span(class='pet-detail-span') Color: 
+                |  #{pet.color}
+    h3 About #{pet.name}
+    p #{pet.description}
+    p
+        span(class='pet-detail-span') Adoption Fee: 
+        |  $#{pet.adoption_fee}
+    button(class='adopt-btn') Adopt
+    p
+    a(href=pet.url+'/update') Update pet
+    p
+    a(href=pet.url+'/delete') Delete pet

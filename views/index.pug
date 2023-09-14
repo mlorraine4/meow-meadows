@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h2 #{title} is a fake pet adoption website. 
+  p 
+    | Add your own 
+    a(href='/inventory/pet/create') pet, 
+    a(href='inventory/category/create') types of pets, 
+    |  or 
+    a(href='inventory/pets') view all of our critters
+    |  up for adoption!
+  img(src="../images/home-img.webp", class='home-img')

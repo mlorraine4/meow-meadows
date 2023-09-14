@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 #{title}: #{pet.name}
+
+    p Do you really want to delete this Pet?
+
+    form(method='POST' action='')
+        div.form-group
+        input#petid.form-control(type='hidden',name='petid', required='true', value=pet._id )
+
+        button.btn.btn-primary(type='submit') Delete

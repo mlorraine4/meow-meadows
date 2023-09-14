@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h2 List of Pet Categories
+    each category in categories
+      li
+        a(href=category.url) #{category.name}
+
+    else
+      li There are no categories of pets.

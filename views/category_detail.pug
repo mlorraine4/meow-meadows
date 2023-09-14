@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h2 List of #{category.name}
+    each pet in pets
+      li
+        a(href=pet.url) #{pet.name}
+
+    else
+      li There are no pets in #{category.name}

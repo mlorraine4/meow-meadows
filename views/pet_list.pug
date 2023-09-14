@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h2 List of Pets
+
+    div(class='pets-container')
+        each pet in pets
+            div(class='pet-list-item')
+                img(src=pet.photo_url class='pet-img-list')
+                a(href=pet.url, class='pet-list-link') #{pet.name}
+
+        else
+            div There are no pets.
