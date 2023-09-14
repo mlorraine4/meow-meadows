@@ -19,11 +19,14 @@ button {
   border-radius: 8px;
   color: white;
   padding: 5px;
-  font-size: 1.5em;
 }
 
 button:hover {
   background-color: cornflowerblue;
+}
+
+.adopt-btn {
+  font-size: 1.5em;
 }
 
 .header {
