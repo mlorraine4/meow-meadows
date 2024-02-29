@@ -5,10 +5,10 @@ const router = express.Router();
 const pet_controller = require("../controllers/petController");
 const category_controller = require("../controllers/categoryController");
 
-/// pet ROUTES ///
-
 // GET home page.
 router.get("/", category_controller.index);
+
+/// pet ROUTES ///
 
 // GET request for creating a pet. NOTE This must come before routes that display pet (uses id).
 router.get("/pet/create", pet_controller.pet_create_get);

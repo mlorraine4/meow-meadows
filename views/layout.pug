@@ -7,23 +7,20 @@ html(lang='en')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     div(class='container')
-      div(class='header')= title
-      div(class='flex')
-        div(class='sidebar-container')
-          block sidebar
-            ul(class='sidebar-nav')
-              li
-                a(href='/inventory') Home
-              li
-                a(href='/inventory/pets') All pets
-              li
-                a(href='/inventory/categories') All categories
-              li
-                hr
-              li
-                a(href='/inventory/pet/create') Create new pet
-              li
-                a(href='/inventory/category/create') Create new category
+      div(class='header') Meow Meadows
+      ul(class='sidebar-nav')
+        li
+          a(href='/') Home
+        li
+          a(href='/pets') All pets
+        li
+          a(href='/categories') All categories
+        li
+          hr
+        li
+          a(href='/pet/create') Create new pet
+        li
+          a(href='/category/create') Create new category
 
-        div(class='content')
-          block content
+      div(class='content')
+        block content

@@ -1,12 +1,13 @@
 extends layout
 
 block content
-  h2 #{title} is a fake pet adoption website. 
-  p 
+  p(class="text-lg")
     | Add your own 
-    a(href='/inventory/pet/create') pet, 
-    a(href='inventory/category/create') types of pets, 
-    |  or 
-    a(href='inventory/pets') view all of our critters
+    a(href='/pet/create') pet
+    | , view our 
+    a(href='/category/create') types of pets,
+    |   or 
+    a(href='/pets') see all of our critters
     |  up for adoption!
+  div(class="spotlight") Our pets of the week:
   img(src="../images/home-img.webp", class='home-img')
